@@ -1,6 +1,8 @@
 # Image-Colorizer-using-manga-dataset
 Details:
-DATASET USED :
+DATASET USED :https://www.kaggle.com/datasets/chandlertimm/unified/data  (1000 images from colored black clover manga panels)
+BATCH_SIZE-32
+EPOCHS-100
 
 Image Colorizer using GAN which has been trained on pair of colored and uncolored manga panels
 
@@ -64,17 +66,23 @@ Key Characteristics of DCGAN are:
 
 Since the dataset used was the 1000 colored images and grayscaled images of manga panels of black clover manga. It gives better results for colorization of manga panels than of real grayscaled images.
 <br>
-Manga_panel1
+Manga_panel1-Tenjho Tenge
 ![WhatsApp Image 2024-10-05 at 10 56 17 PM](https://github.com/user-attachments/assets/8aff95d5-d28e-41cf-ab77-c0f6045d3caa)
 <br>
-Manga_panel2
+Manga_panel2-One Punch Man
 
 ![image](https://github.com/user-attachments/assets/c0b0da78-697b-4ac3-9bb6-07dc733873de)
 
 <br>
-Grayscaled real image
-![WhatsApp Image 2024-10-05 at 10 52 15 PM](https://github.com/user-attachments/assets/37725ba2-cd80-4992-a807-5f73828c4306)
+Manga_Panel3-One Punch Man
+
+![image](https://github.com/user-attachments/assets/5e0fcaef-e717-498d-acb2-69496a6666d3)
+
 <br>
+Real Grayscale image
+
+![WhatsApp Image 2024-10-05 at 10 52 15 PM](https://github.com/user-attachments/assets/15e13806-28dd-444b-8d6f-adad2b15efe5)
+
 
 
 
