@@ -68,7 +68,9 @@ Manga_panel1
 ![WhatsApp Image 2024-10-05 at 10 56 17 PM](https://github.com/user-attachments/assets/8aff95d5-d28e-41cf-ab77-c0f6045d3caa)
 <br>
 Manga_panel2
-![WhatsApp Image 2024-10-05 at 10 54 06 PM](https://github.com/user-attachments/assets/59dfd843-cc0c-4798-a169-71d9941750c2)
+
+![image](https://github.com/user-attachments/assets/c0b0da78-697b-4ac3-9bb6-07dc733873de)
+
 <br>
 Grayscaled real image
 ![WhatsApp Image 2024-10-05 at 10 52 15 PM](https://github.com/user-attachments/assets/37725ba2-cd80-4992-a807-5f73828c4306)
