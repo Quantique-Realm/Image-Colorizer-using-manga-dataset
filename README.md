@@ -86,5 +86,5 @@ Real Grayscale image
 
 Further changes could be done like add 5 layers for downscaling and upscaling.
 5 downscaling layers in discriminator.
-batch_size of 64 to reduce noise in image.
+Batch_size of 64 to reduce noise in image generated.
 
