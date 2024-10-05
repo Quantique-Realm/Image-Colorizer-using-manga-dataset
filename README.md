@@ -85,6 +85,6 @@ Real Grayscale image
 ![WhatsApp Image 2024-10-05 at 10 52 15 PM](https://github.com/user-attachments/assets/15e13806-28dd-444b-8d6f-adad2b15efe5)
 
 Further changes could be done like add 5 layers for downscaling and upscaling.
-5 downscaling layers in generator.
+5 downscaling layers in discriminator.
 batch_size of 64 to reduce noise in image.
 
