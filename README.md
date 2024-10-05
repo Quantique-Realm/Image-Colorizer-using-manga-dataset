@@ -1,4 +1,7 @@
 # Image-Colorizer-using-manga-dataset
+Details:
+DATASET USED :
+
 Image Colorizer using GAN which has been trained on pair of colored and uncolored manga panels
 
 **Architecture of the GAN Model Trained**
@@ -29,10 +32,15 @@ Key Characteristics of DCGAN are:
 •	Leaky ReLU Activation: Introduced after each convolution to allow for non-linear transformations and to avoid dead neurons.
 
 **Upsampling:**
+
 •	Three Transposed Convolutional Layers: These layers perform upsampling with strides of 2, effectively increasing the spatial dimensions of the feature maps.
+
 •	ReLU Activation: Applied after each transposed convolution to introduce non-linearity.
+
 •	A transposed convolutional layer generates an output feature map that is larger than its input, allowing the model to synthesize higher-resolution images.
+
 **Output Layer:**
+
 •	The final layer uses a tanh Activation Function to produce color images with pixel values ranging from -1 to 1, which is suitable for generating realistic RGB images.
 
 
@@ -51,3 +59,17 @@ Key Characteristics of DCGAN are:
 **Flatten Layer:** Converts the output from the last convolutional layer into a one-dimensional vector.
 
 **Output Layer:** A Dense layer with a single neuron and a sigmoid activation function, providing the probability that an image is real (1) or fake (0).
+
+**RESULTS**
+
+Since the dataset used was the 1000 colored images and grayscaled images of manga panels of black clover manga. It gives better results for colorization of manga panels than of real grayscaled images.
+<br>
+![WhatsApp Image 2024-10-05 at 10 56 17 PM](https://github.com/user-attachments/assets/8aff95d5-d28e-41cf-ab77-c0f6045d3caa)
+<br>
+![WhatsApp Image 2024-10-05 at 10 54 06 PM](https://github.com/user-attachments/assets/59dfd843-cc0c-4798-a169-71d9941750c2)
+<br>
+![WhatsApp Image 2024-10-05 at 10 52 15 PM](https://github.com/user-attachments/assets/37725ba2-cd80-4992-a807-5f73828c4306)
+<br>
+
+
+
