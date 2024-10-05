@@ -1,4 +1,5 @@
 # Image-Colorizer-using-manga-dataset
+FOR DIY Projects 2024
 Details:
 DATASET USED :https://www.kaggle.com/datasets/chandlertimm/unified/data  (1000 images from colored black clover manga panels)
 BATCH_SIZE-32
@@ -83,6 +84,7 @@ Real Grayscale image
 
 ![WhatsApp Image 2024-10-05 at 10 52 15 PM](https://github.com/user-attachments/assets/15e13806-28dd-444b-8d6f-adad2b15efe5)
 
-
-
+Further changes could be done like add 5 layers for downscaling and upscaling.
+5 downscaling layers in generator.
+batch_size of 64 to reduce noise in image.
 
