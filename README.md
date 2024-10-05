@@ -15,7 +15,7 @@ Key Characteristics of DCGAN are:
 	•	The activation functions used in the network (Leaky ReLU in the encoder and ReLU in the decoder) align with the DCGAN practices, as they help mitigate the dying ReLU problem and maintain non-linearity throughout the network.
 5.	**Final Layer Activation:**
 	•	The output layer uses the tanh activation function, which is also standard in DCGANs. The use of tanh helps to scale the pixel values between -1 and 1, which is especially important when working with image data that has been normalized.
-
+<br>
 **Generator**
 **Input Layer:** The generator takes a grayscale image of shape (IMG_HEIGHT, IMG_WIDTH, 1).
 **Downsampling:**
@@ -28,6 +28,7 @@ Key Characteristics of DCGAN are:
 	•	A transposed convolutional layer generates an output feature map that is larger than its input, allowing the model to synthesize higher-resolution images.
 **Output Layer:**
 	•	The final layer uses a tanh Activation Function to produce color images with pixel values ranging from -1 to 1, which is suitable for generating realistic RGB images.
+ <br>
 **Discriminator**
 **Input Layer:** Accepts images with four channels (RGBA).
 **Convolutional Layers:**
