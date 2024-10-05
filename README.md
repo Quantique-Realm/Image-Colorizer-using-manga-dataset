@@ -30,10 +30,14 @@ Key Characteristics of DCGAN are:
 	•	The final layer uses a tanh Activation Function to produce color images with pixel values ranging from -1 to 1, which is suitable for generating realistic RGB images.
  <br>
 **Discriminator**
+
 **Input Layer:** Accepts images with four channels (RGBA).
+
 **Convolutional Layers:**
 	•	Three Conv2D Layers: Each layer increases the number of filters (64, 128, and 256) and uses a kernel size of 4x4 with a stride of 2 to downsample the input while extracting features.
 	•	Leaky ReLU Activation: Applied after each convolution to introduce non-linearity and prevent dead neurons.
 	•	Batch Normalization: Used after the second and third layers to stabilize learning and improve convergence.
+ 
 **Flatten Layer:** Converts the output from the last convolutional layer into a one-dimensional vector.
+
 **Output Layer:** A Dense layer with a single neuron and a sigmoid activation function, providing the probability that an image is real (1) or fake (0).
