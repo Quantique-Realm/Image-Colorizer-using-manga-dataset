@@ -15,28 +15,38 @@ Key Characteristics of DCGAN are:
 	•	The activation functions used in the network (Leaky ReLU in the encoder and ReLU in the decoder) align with the DCGAN practices, as they help mitigate the dying ReLU problem and maintain non-linearity throughout the network.
 5.	**Final Layer Activation:**
 	•	The output layer uses the tanh activation function, which is also standard in DCGANs. The use of tanh helps to scale the pixel values between -1 and 1, which is especially important when working with image data that has been normalized.
-<br>
+
 **Generator**
+
 **Input Layer:** The generator takes a grayscale image of shape (IMG_HEIGHT, IMG_WIDTH, 1).
+
 **Downsampling:**
-	•	Four Convolutional Layers: Each layer performs downsampling using a kernel size of 4x4 and strides of 2.
-	•	Batch Normalization: Applied after each convolution to stabilize and accelerate training.
-	•	Leaky ReLU Activation: Introduced after each convolution to allow for non-linear transformations and to avoid dead neurons.
+
+•	Four Convolutional Layers: Each layer performs downsampling using a kernel size of 4x4 and strides of 2.
+
+•	Batch Normalization: Applied after each convolution to stabilize and accelerate training.
+
+•	Leaky ReLU Activation: Introduced after each convolution to allow for non-linear transformations and to avoid dead neurons.
+
 **Upsampling:**
-	•	Three Transposed Convolutional Layers: These layers perform upsampling with strides of 2, effectively increasing the spatial dimensions of the feature maps.
-	•	ReLU Activation: Applied after each transposed convolution to introduce non-linearity.
-	•	A transposed convolutional layer generates an output feature map that is larger than its input, allowing the model to synthesize higher-resolution images.
+•	Three Transposed Convolutional Layers: These layers perform upsampling with strides of 2, effectively increasing the spatial dimensions of the feature maps.
+•	ReLU Activation: Applied after each transposed convolution to introduce non-linearity.
+•	A transposed convolutional layer generates an output feature map that is larger than its input, allowing the model to synthesize higher-resolution images.
 **Output Layer:**
-	•	The final layer uses a tanh Activation Function to produce color images with pixel values ranging from -1 to 1, which is suitable for generating realistic RGB images.
- <br>
+•	The final layer uses a tanh Activation Function to produce color images with pixel values ranging from -1 to 1, which is suitable for generating realistic RGB images.
+
+
 **Discriminator**
 
 **Input Layer:** Accepts images with four channels (RGBA).
 
 **Convolutional Layers:**
-	•	Three Conv2D Layers: Each layer increases the number of filters (64, 128, and 256) and uses a kernel size of 4x4 with a stride of 2 to downsample the input while extracting features.
-	•	Leaky ReLU Activation: Applied after each convolution to introduce non-linearity and prevent dead neurons.
-	•	Batch Normalization: Used after the second and third layers to stabilize learning and improve convergence.
+
+•	Three Conv2D Layers: Each layer increases the number of filters (64, 128, and 256) and uses a kernel size of 4x4 with a stride of 2 to downsample the input while extracting features.
+ 
+•	Leaky ReLU Activation: Applied after each convolution to introduce non-linearity and prevent dead neurons.
+ 
+•	Batch Normalization: Used after the second and third layers to stabilize learning and improve convergence.
  
 **Flatten Layer:** Converts the output from the last convolutional layer into a one-dimensional vector.
 
